@@ -1,3 +1,4 @@
+//basicamente esse exercicio Ã© uma melhorada do outro, concertando algumas coisas.
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -22,7 +23,7 @@ main()
 
     do
     {
-        printf("Nos fale, qual foi seu nível de satisfação?\n1-Satisfeito\n2-Contente\n3-Meia-boca\n4-Uma droga\n5-Voto nulo\nDigite os números designados para votar.");
+        printf("Nos fale, qual foi seu nÃ­vel de satisfaÃ§Ã£o?\n1-Satisfeito\n2-Contente\n3-Meia-boca\n4-Uma droga\n5-Voto nulo\nDigite os nÃºmeros designados para votar.");
         printf("\n");
         scanf("%i",&codigo);
         switch(codigo)
@@ -47,7 +48,7 @@ main()
             n++;
             cont++;
         default:
-            printf("Número invalido, remcomeçe.\n");
+            printf("NÃºmero invalido, remcomeÃ§e.\n");
         }
     }
     while(cont != 15);
@@ -97,7 +98,7 @@ main()
     printf("\n");
     if(indiceempate > 0)
     {
-        printf("Houve um empate técnico! Mais de uma opção obteve %i votos.\n", comparacao);
+        printf("Houve um empate tÃ©cnico! Mais de uma opÃ§Ã£o obteve %i votos.\n", comparacao);
     }
     if (comparacao > n)
     {
